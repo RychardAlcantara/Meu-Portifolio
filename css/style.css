@@ -329,7 +329,7 @@ button:hover {
 }
 
 /* Media Queries para telas muito pequenas (ex: celulares) */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
    .logo-foto {
        width: 80px; /* Reduz o tamanho da foto do logo */
        height: 80px;
@@ -355,6 +355,12 @@ button:hover {
 
    .contato h2 {
        font-size: 30px; /* Tamanho do título de contato menor */
+   }
+   
+   .link {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
    }
 }
 
