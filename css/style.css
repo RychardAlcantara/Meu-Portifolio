@@ -1,0 +1,278 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh; /* Faz com que o body ocupe a altura total da janela */
+   background-color: #1a1a1a;
+   color: #f5f5f5;
+   line-height: 1.6;
+   font-size: 18px;
+   min-width: 100%;
+}
+
+.center {
+   display: flex;
+   flex-wrap: wrap;
+   max-width: 1280px;
+   margin: 0 auto;
+}
+
+header {
+   background-color: #333;
+   padding: 20px 0;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+   width: 50%;
+   font-size: 30px;
+   margin-top: 21px;
+   display: flex;
+   align-items: center;
+}
+
+.logo-foto {
+   width: 100px; /* Tamanho da foto */
+   height: 100px;
+   border-radius: 50%; /* Deixa a imagem circular */
+   margin-right: 15px; /* Espaço entre a foto e o texto RA */
+   object-fit: cover; /* Faz a imagem ocupar o espaço sem distorcer */
+   border: 2px solid #fff; /* Borda branca ao redor da imagem */
+}
+
+.menu {  
+   display: flex;
+   align-items: center;
+   width: 50%;
+   text-align: right;
+   margin-top: 10px;
+}
+
+.menu a {
+   color: #f5f5f5;
+   text-decoration: none;
+   font-weight: 600;
+   margin-right: 20px;
+   transition: color 0.3s;
+}
+
+.menu a:hover {
+   color: #ff6347;
+}
+
+.social-midia {
+   position: absolute;
+   right: 50px;
+   top: 45px;
+}
+
+.social-midia img {
+   width: 35px;
+   margin: 0 10px;
+   transition: transform 0.3s;
+}
+
+.social-midia img:hover {
+   transform: scale(1.1);
+}
+
+section {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.hidden {
+   opacity: 0;
+   filter: blur(10px);
+   transform: translateY(-100%); /* O elemento começa fora da tela */
+   transition: all 1s ease;
+}
+
+.show {
+   opacity: 1;
+   filter: blur(0);
+   transform: translateY(0); /* O elemento volta à sua posição original */
+   transition: all 1s ease;
+}
+
+
+h1, h2 {
+   font-weight: 700;
+   margin-bottom: 20px;
+   color: #f5f5f5;
+}
+
+h1 {
+   font-size: 48px;
+}
+
+h2 {
+   font-size: 36px;
+   text-align: center;
+}
+
+p {
+   font-size: 18px;
+   color: #dcdcdc;
+   margin-bottom: 20px;
+   line-height: 1.8;
+}
+
+.page1 a {
+   background-color: #ff6347;
+   color: white;
+   border: none;
+   padding: 15px 30px;
+   border-radius: 5px;
+   font-size: 16px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+   text-decoration: none;
+}
+
+button:hover {
+   background-color: #e5533d;
+}
+
+.page1, .page2 {
+   padding: 50px 20px;
+   min-height: 80vh;
+}
+
+.page1 {
+   margin-top: 100px;
+}
+
+.texto-apresentacao h1 {
+   font-size: 52px;
+}
+
+.texto-apresentacao p {
+   margin: 30px 0;
+}
+
+.sobre-mim-container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 20px; /* Espaçamento entre a imagem e o texto */
+}
+
+.minha-foto img {
+   width: 300px; /* Ajuste conforme necessário */
+   height: 300px;
+   border-radius: 50%; /* Deixa a imagem redonda */
+   object-fit: cover; /* Faz a imagem preencher o espaço sem distorcer */
+}
+
+.texto-sobre-mim p {
+   font-size: 18px;
+   line-height: 1.6;
+   text-align: justify;
+}
+
+.texto-sobre-mim h2 {
+   font-size: 52px;
+}
+
+.texto-habilidades {
+   text-align: center;
+   margin-bottom: 100px;
+}
+
+.texto-habilidades h2 {
+   font-size: 42px;
+}
+
+.texto-habilidades p {
+   width: 50%;
+   margin: 20px auto;
+}
+
+.habilidades {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 20px; /* Espaçamento entre as imagens */
+   
+}
+
+.habilidades img {
+   width: 80px; /* Ajuste o tamanho conforme necessário */
+   height: 80px;
+   object-fit: contain;
+   transition: transform 0.3s;
+}
+
+.habilidades img:hover {
+   transform: scale(1.1); /* Efeito de hover para ampliar um pouco as imagens */
+}
+
+.projetos {
+   margin-top: 100px;
+   margin-bottom: 100px;
+   text-align: center;
+   padding: 50px 0;
+}
+
+.projetos-github a {
+   display: inline-flex;
+   align-items: center;
+   gap: 10px; /* Espaçamento entre o ícone e o texto */
+   text-decoration: none;
+   color: bisque;
+   font-size: 20px;
+   font-weight: bold;
+   transition: color 0.3s;
+}
+
+.projetos-github a:hover {
+   color: coral; /* Muda a cor ao passar o mouse */
+}
+
+.projetos-github img {
+   width: 40px;
+   height: 40px;
+}
+
+.page5 {
+   display: flex;
+   background-color: #333;
+   color: bisque;
+   padding: 50px 0;
+}
+
+.contato {
+   text-align: center;
+}
+
+.contato h2 {
+   font-size: 40px;
+   margin-bottom: 20px;
+}
+
+.contato p {
+   font-size: 18px;
+   margin: 10px 0;
+}
+
+.contato a {
+   color: coral;
+   text-decoration: none;
+   font-weight: bold;
+   transition: color 0.3s;
+}
+
+.contato a:hover {
+   color: bisque; /* Muda a cor do link ao passar o mouse */
+}
+
+
