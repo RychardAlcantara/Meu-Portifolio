@@ -275,4 +275,87 @@ button:hover {
    color: bisque; /* Muda a cor do link ao passar o mouse */
 }
 
+/* Media Queries para telas menores */
+@media (max-width: 1400px) {
+   .logo {
+       width: 100%; /* Logo ocupa a largura total */
+   }
+
+   .menu {
+       display: flex;
+       gap: 10px;
+       width: 100%; /* Ocupa a largura total */
+       align-items: center; /* Centraliza os links */
+       margin-top: 30px;
+   }
+
+   .menu a {
+       margin: 10px 30px; /* Espaçamento entre os links */
+   }
+
+   .social-midia {
+       margin-top: 10px; /* Adiciona um pouco de espaço acima */
+   }
+
+   .sobre-mim-container {
+       flex-direction: column; /* Coloca a imagem e o texto em coluna */
+       align-items: center; /* Centraliza o conteúdo */
+   }
+
+   .minha-foto img {
+       width: 30%; /* Ajusta a largura da imagem da minha foto */
+       height: auto; /* Mantém a proporção da imagem */
+   }
+   .page1, .page2 {
+      min-height: 70vh;
+   }
+
+   .texto-apresentacao h1 {
+       font-size: 32px; /* Tamanho do título menor em telas pequenas */
+   }
+
+   .habilidades img {
+       width: 60px; /* Ajusta o tamanho das habilidades */
+       height: 60px; /* Ajusta o tamanho das habilidades */
+   }
+
+   .projetos {
+       padding: 30px 0; /* Ajusta o padding dos projetos */
+   }
+
+   .contato {
+       padding: 30px; /* Ajusta o padding do contato */
+   }
+}
+
+/* Media Queries para telas muito pequenas (ex: celulares) */
+@media (max-width: 480px) {
+   .logo-foto {
+       width: 80px; /* Reduz o tamanho da foto do logo */
+       height: 80px;
+   }
+
+   .logo {
+      margin: 16px;
+   }
+
+   .social-midia {
+      position: static;
+      margin: 16px;
+   }
+
+   .menu {
+       flex-direction: column; 
+       gap: 10px;
+   }
+
+   .texto-apresentacao h1 {
+       font-size: 24px; /* Tamanho do título ainda menor */
+   }
+
+   .contato h2 {
+       font-size: 30px; /* Tamanho do título de contato menor */
+   }
+}
+
 
