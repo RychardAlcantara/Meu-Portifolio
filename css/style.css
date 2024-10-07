@@ -275,6 +275,17 @@ button:hover {
    color: bisque; /* Muda a cor do link ao passar o mouse */
 }
 
+.menu {
+   display: none; /* Oculte o menu por padrão */
+}
+
+.menu-icon {
+   font-size: 24px; /* Tamanho do ícone */
+   cursor: pointer; /* Cursor como ponteiro */
+   margin-left: 20px; /* Espaçamento à esquerda do ícone */
+}
+
+
 /* Media Queries para telas menores */
 @media (max-width: 1400px) {
    .logo {
@@ -341,7 +352,7 @@ button:hover {
 
    .social-midia {
       position: static;
-      margin: 16px;
+      margin: 25px 0px 0px 12px;
    }
 
    .menu {
@@ -361,6 +372,28 @@ button:hover {
       display: flex;
       flex-direction: column;
       gap: 25px;
+   }
+
+   .menu {
+      display: none; /* Oculta o menu */
+  }
+
+  .menu-icon {
+      display: inline; /* Exibe o ícone de menu */
+  }
+
+  .center {
+   display: block;
+  }
+}
+
+@media (min-width: 601px) {
+   .menu {
+       display: flex; /* Mostra o menu como flex */
+   }
+
+   .menu-icon {
+       display: none; /* Oculta o ícone de menu */
    }
 }
 

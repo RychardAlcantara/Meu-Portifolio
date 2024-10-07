@@ -28,3 +28,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+document.getElementById("menu-button").addEventListener("click", function() {
+    var menu = document.getElementById("menu");
+    if (menu.style.display === "none" || menu.style.display === "") {
+        menu.style.display = "flex"; // Exibir o menu
+    } else {
+        menu.style.display = "none"; // Ocultar o menu
+    }
+});
