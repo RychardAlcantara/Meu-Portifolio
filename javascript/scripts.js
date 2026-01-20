@@ -29,11 +29,18 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-document.getElementById("menu-button").addEventListener("click", function() {
-    var menu = document.getElementById("menu");
-    if (menu.style.display === "none" || menu.style.display === "") {
-        menu.style.display = "flex"; // Exibir o menu
-    } else {
-        menu.style.display = "none"; // Ocultar o menu
-    }
+document.querySelectorAll("#menu a").forEach(link => {
+   link.addEventListener("click", () => {
+      if (window.innerWidth <= 600) {
+         menu.classList.remove("open");
+      }
+   });
+});
+
+
+const menuButton = document.getElementById("menu-button");
+const menu = document.getElementById("menu");
+
+menuButton.addEventListener("click", () => {
+   menu.classList.toggle("open");
 });
