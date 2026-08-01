@@ -4,225 +4,397 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description"
+        content="Rychard Alcantara — Full Stack Developer atuando com Angular, React, Node.js, TypeScript, C# e Docker. Portfólio de projetos e trajetória profissional.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/icon-aba.png">
-    <title>Portfólio | Rychard Gabriell - Desenvolvedor Full-Stack</title>
+    <title>Rychard Alcantara | Full Stack Developer — Angular, React, Node.js</title>
 </head>
 
 <body>
 
-    <header>
-        <div class="center">
-            <div class="logo">
-                <img src="img/minha-foto.jpg" alt="Foto de Rychard" class="logo-foto">
-                Rychard Alcantara
-            </div>
-            <i class="fa fa-bars menu-icon" aria-hidden="true" id="menu-button"></i>
-            <div class="menu" id="menu">
-                <a href="#inicio">Início</a>
-                <a href="#sobre-mim">Sobre Mim</a>
-                <a href="#habilidades">Habilidades</a>
-                <a href="#projetos">Projetos</a>
-                <a href="#contato">Contato</a>
+    <header class="site-header" id="site-header">
+        <div class="container header-inner">
+            <a href="#inicio" class="brand">
+                <img src="img/minha-foto.jpg" alt="Rychard Alcantara" class="brand-avatar">
+                <span class="brand-text">
+                    <strong>Rychard Alcantara</strong>
+                    <small>Full Stack Developer</small>
+                </span>
+            </a>
+
+            <nav class="nav" id="menu">
+                <a href="#inicio" class="nav-link">Início</a>
+                <a href="#sobre" class="nav-link">Sobre</a>
+                <a href="#experiencia" class="nav-link">Experiência</a>
+                <a href="#projetos" class="nav-link">Projetos</a>
+                <a href="#contato" class="nav-link">Contato</a>
+            </nav>
+
+            <div class="header-actions">
+                <a class="btn btn-ghost" href="curriculo/Currículo Rychard - 2024 SÃO PAULO.pdf"
+                    download="Curriculo_Rychard_Alcantara.pdf">
+                    Currículo
+                </a>
+                <button class="menu-toggle" id="menu-button" aria-label="Abrir menu" aria-expanded="false">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
             </div>
         </div>
     </header>
 
+    <main>
 
-    <main class="hidden">
-        <div class="page1">
-            <div class="center">
-                <div class="texto-apresentacao">
-                    <h1>
-                        Olá, eu sou Rychard Alcantara <br>
-                        Desenvolvedor Full Stack & Front-End Engineer
-                    </h1>
+        <section id="inicio" class="hero">
+            <div class="container hero-grid">
 
-                    <p>
-                        Sou desenvolvedor Full Stack com foco em <strong>Front-End Engineering</strong>,
-                        pós-graduado na área e com experiência no desenvolvimento de sites e aplicações
-                        modernas, performáticas e responsivas.
-                        <br><br>
-                        Atuo criando soluções digitais para empresas, unindo design, performance e
-                        experiência do usuário utilizando tecnologias como
-                        <span style="color: coral;">React, Angular, TypeScript, Node.js e MySQL</span>.
+                <div class="hero-content reveal">
+                    <p class="eyebrow">Analista Programador Jr · PAULUS Brasil</p>
+
+                    <h1>Rychard Alcantara</h1>
+                    <p class="hero-role">
+                        Full Stack Developer — Angular · React · Node.js · TypeScript · C# · Docker
                     </p>
 
+                    <p class="hero-lead">
+                        Desenvolvo sistemas web completos há mais de 3 anos, do front-end à infraestrutura.
+                        Atuo com Angular e .NET em sistemas corporativos e mantenho projetos próprios em
+                        produção — incluindo uma plataforma financeira com arquitetura de segurança
+                        construída do zero.
+                    </p>
 
-                    <div class="link">
-                        <a href="https://www.linkedin.com/in/rychard-alcantara-2870121b1/" target="_blank">Conheça meus
-                            Serviços <i class="fa fa-briefcase" aria-hidden="true"></i></a>
+                    <div class="hero-actions">
+                        <a href="#projetos" class="btn btn-primary">Ver projetos</a>
                         <a href="curriculo/Currículo Rychard - 2024 SÃO PAULO.pdf"
-                            download="Curriculo_Rychard_Santana.pdf" target="_blank">
-                            Download Curriculo <i class="fa fa-download" aria-hidden="true"></i>
+                            download="Curriculo_Rychard_Alcantara.pdf" class="btn btn-outline">
+                            Baixar currículo <i class="fa fa-download" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                    <div class="hero-links">
+                        <a href="https://www.linkedin.com/in/rychard-alcantara-2870121b1/" target="_blank"
+                            rel="noopener" aria-label="LinkedIn">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://github.com/RychardAlcantara" target="_blank" rel="noopener"
+                            aria-label="GitHub">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a href="mailto:rychardgabriell32@gmail.com" aria-label="Email">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
                         </a>
                     </div>
                 </div>
+
+                <div class="hero-panel reveal">
+                    <div class="code-window">
+                        <div class="code-window-bar">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                            <span class="code-window-title">rychard.dev</span>
+                        </div>
+                        <pre class="code-window-body"><code><span class="tok-kw">const</span> <span class="tok-var">rychard</span> = {
+  <span class="tok-key">cargo</span>: <span class="tok-str">"Analista Programador Jr"</span>,
+  <span class="tok-key">empresa</span>: <span class="tok-str">"PAULUS Brasil"</span>,
+  <span class="tok-key">experiencia</span>: <span class="tok-str">"3+ anos"</span>,
+  <span class="tok-key">stack</span>: [
+    <span class="tok-str">"Angular"</span>, <span class="tok-str">"React"</span>,
+    <span class="tok-str">"Node.js"</span>, <span class="tok-str">"TypeScript"</span>,
+    <span class="tok-str">"C# / .NET"</span>, <span class="tok-str">"Docker"</span>
+  ],
+  <span class="tok-key">foco</span>: <span class="tok-str">"sistemas web seguros e escaláveis"</span>
+};</code></pre>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="sobre" class="section">
+            <div class="container">
+                <p class="section-eyebrow reveal">Sobre</p>
+                <h2 class="section-title reveal">De suporte técnico a desenvolvedor full stack</h2>
+
+                <div class="about-grid">
+                    <p class="about-text reveal">
+                        Formado em Análise e Desenvolvimento de Sistemas pela UMESP e cursando
+                        pós-graduação em Front-End Engineering pela FIAP. Comecei a carreira em
+                        suporte técnico, migrei para desenvolvimento full stack e hoje atuo como
+                        Analista Programador Jr, construindo sistemas corporativos com Angular e
+                        .NET — além de manter projetos próprios em produção, como o Finanças+.
+                    </p>
+
+                    <div class="skills reveal">
+                        <div class="skill-group">
+                            <h3>Front-end</h3>
+                            <div class="tags">
+                                <span class="tag">Angular</span>
+                                <span class="tag">React</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">HTML / CSS</span>
+                            </div>
+                        </div>
+                        <div class="skill-group">
+                            <h3>Back-end</h3>
+                            <div class="tags">
+                                <span class="tag">Node.js</span>
+                                <span class="tag">C# / .NET</span>
+                                <span class="tag">PHP</span>
+                                <span class="tag">Laravel</span>
+                            </div>
+                        </div>
+                        <div class="skill-group">
+                            <h3>Dados &amp; Infra</h3>
+                            <div class="tags">
+                                <span class="tag">SQL</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">Docker</span>
+                                <span class="tag">Firebase</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiencia" class="section section-alt">
+            <div class="container">
+                <p class="section-eyebrow reveal">Trajetória</p>
+                <h2 class="section-title reveal">Experiência</h2>
+
+                <ol class="timeline">
+                    <li class="timeline-item reveal">
+                        <span class="timeline-date">jul 2025 — atual</span>
+                        <h3>Analista Programador Jr <span>· PAULUS Brasil</span></h3>
+                        <p>Desenvolvimento e manutenção de sistemas internos em projetos full stack.</p>
+                    </li>
+
+                    <li class="timeline-item reveal">
+                        <span class="timeline-date">set 2024 — jul 2025</span>
+                        <h3>Analista de Soluções Jr <span>· THS Tecnologia</span></h3>
+                        <p>Sistemas para a Secretaria de Segurança Pública de SP com Angular no
+                            front-end e .NET no back-end — implementação de funcionalidades, manutenção
+                            evolutiva/corretiva e análise de requisitos para sistemas críticos.</p>
+                    </li>
+
+                    <li class="timeline-item reveal">
+                        <span class="timeline-date">mai 2023 — ago 2024</span>
+                        <h3>Full Stack Developer Jr <span>· Infracommerce</span></h3>
+                        <p>Soluções customizadas para clientes externos com PHP, Laravel, React,
+                            Node.js e TypeScript — da arquitetura à entrega.</p>
+                    </li>
+
+                    <li class="timeline-item reveal">
+                        <span class="timeline-date">2020 — 2023</span>
+                        <h3>Suporte Técnico em TI <span>· Viamar Grupo / Infracommerce</span></h3>
+                        <p>Início de carreira em suporte a sistemas, redes e usuários — base que
+                            sustenta a atenção a detalhes e infraestrutura no trabalho atual.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="projetos" class="section">
+            <div class="container">
+                <p class="section-eyebrow reveal">Trabalho</p>
+                <h2 class="section-title reveal">Projetos</h2>
+
+                <div class="projects-grid">
+
+                    <article class="project-card project-card--featured reveal">
+                        <div class="project-visual project-visual--finance">
+                            <img src="img/projeto-financas.png" alt="Dashboard do Finanças+">
+                        </div>
+                        <div class="project-body">
+                            <div class="project-heading">
+                                <h3>Finanças+</h3>
+                                <span class="project-badge">Projeto próprio · Em produção</span>
+                            </div>
+
+                            <p class="project-label">Problema</p>
+                            <p>Controle financeiro pessoal costuma ficar espalhado entre planilhas
+                                soltas e apps que não mostram parcelamento de cartão, faturas futuras e
+                                metas em um único lugar.</p>
+
+                            <p class="project-label">O que resolve</p>
+                            <ul class="project-features">
+                                <li>Dashboard com saldo, receitas, despesas e sobra do mês em tempo real</li>
+                                <li>Geração automática de parcelas de cartão e faturas mensais</li>
+                                <li>Contas, cartões, categorias e metas financeiras</li>
+                                <li>Relatórios e gráficos de despesas por categoria e histórico de 12 meses</li>
+                            </ul>
+
+                            <p class="project-label">Diferencial técnico</p>
+                            <p>Arquitetura MVC construída do zero — Router, Auth, Validator, Session e
+                                CSRF próprios — decisão deliberada para rodar em qualquer hospedagem
+                                compartilhada, sem depender de Node, Docker ou Composer. Senhas com
+                                bcrypt, queries 100% via prepared statements (PDO), sanitização contra
+                                XSS e rate limiting no login.</p>
+
+                            <div class="tags project-stack">
+                                <span class="tag tag-mono">PHP 8</span>
+                                <span class="tag tag-mono">MySQL / PDO</span>
+                                <span class="tag tag-mono">Bootstrap 5</span>
+                                <span class="tag tag-mono">Chart.js</span>
+                                <span class="tag tag-mono">MVC próprio</span>
+                            </div>
+
+                            <a href="https://finance.freedev.app/auth/login" target="_blank" rel="noopener"
+                                class="project-link">
+                                Ver projeto <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-visual project-visual--wedding">
+                            <img src="img/projeto-casamento.png" alt="Site de casamento Fabio &amp; Vania">
+                        </div>
+                        <div class="project-body">
+                            <div class="project-heading">
+                                <h3>Site de Casamento</h3>
+                                <span class="project-badge">Projeto próprio · Em produção</span>
+                            </div>
+
+                            <p class="project-label">Problema</p>
+                            <p>Listas de presentes de casamento costumam ser só uma vitrine de
+                                desejos, sem cobrança real nem controle de quem já presenteou.</p>
+
+                            <p class="project-label">O que resolve</p>
+                            <ul class="project-features">
+                                <li>Lista de presentes com pagamento via Mercado Pago (Pix e cartão)</li>
+                                <li>Painel administrativo para cadastrar e gerenciar presentes sem tocar
+                                    no código</li>
+                                <li>Autenticação de admin com JWT e API serverless na Vercel</li>
+                                <li>Contagem regressiva e página do evento com animações</li>
+                            </ul>
+
+                            <div class="tags project-stack">
+                                <span class="tag tag-mono">React</span>
+                                <span class="tag tag-mono">TypeScript</span>
+                                <span class="tag tag-mono">Vite</span>
+                                <span class="tag tag-mono">Tailwind CSS</span>
+                                <span class="tag tag-mono">Supabase</span>
+                                <span class="tag tag-mono">Mercado Pago</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="https://site-casamento-teal.vercel.app/" target="_blank" rel="noopener"
+                                    class="project-link">
+                                    Ver projeto <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://github.com/RychardAlcantara/site-casamento" target="_blank"
+                                    rel="noopener" class="project-link project-link--muted">
+                                    <i class="fa fa-github" aria-hidden="true"></i> Código
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <img src="img/projeto-arquitetura.jpg" alt="Arquitetura Trindade">
+                        <div class="project-body">
+                            <h3>Arquitetura Trindade</h3>
+                            <p class="project-label">Problema</p>
+                            <p>Escritório de arquitetura sem presença digital condizente com a
+                                qualidade dos projetos apresentados.</p>
+                            <p class="project-label">Resultado</p>
+                            <p>Site institucional responsivo com apresentação visual dos projetos,
+                                usado como cartão de visitas digital do escritório.</p>
+                            <div class="tags project-stack">
+                                <span class="tag tag-mono">HTML5</span>
+                                <span class="tag tag-mono">CSS3</span>
+                                <span class="tag tag-mono">JavaScript</span>
+                            </div>
+                            <a href="https://arquitetura-trindade.vercel.app/" target="_blank" rel="noopener"
+                                class="project-link">
+                                Ver projeto <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <img src="img/projeto-marketing.jpg" alt="Innova Marketing">
+                        <div class="project-body">
+                            <h3>Innova Marketing</h3>
+                            <p class="project-label">Problema</p>
+                            <p>Agência de marketing precisava de uma landing page focada em conversão
+                                para geração de leads.</p>
+                            <p class="project-label">Resultado</p>
+                            <p>Landing page performática, com comunicação direta e chamadas claras
+                                para contato comercial.</p>
+                            <div class="tags project-stack">
+                                <span class="tag tag-mono">HTML5</span>
+                                <span class="tag tag-mono">CSS3</span>
+                                <span class="tag tag-mono">JavaScript</span>
+                            </div>
+                            <a href="https://innovamkt.cc/" target="_blank" rel="noopener" class="project-link">
+                                Ver projeto <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <img src="img/projeto-marcenaria.jpg" alt="O Marceneiro">
+                        <div class="project-body">
+                            <h3>O Marceneiro</h3>
+                            <p class="project-label">Problema</p>
+                            <p>Marcenaria de móveis planejados sem canal digital para exibir portfólio
+                                e receber contato.</p>
+                            <p class="project-label">Resultado</p>
+                            <p>Site institucional com portfólio de serviços e contato direto via
+                                WhatsApp.</p>
+                            <div class="tags project-stack">
+                                <span class="tag tag-mono">HTML5</span>
+                                <span class="tag tag-mono">CSS3</span>
+                                <span class="tag tag-mono">JavaScript</span>
+                            </div>
+                            <a href="https://fabrica-omarceneiro.com.br/" target="_blank" rel="noopener"
+                                class="project-link">
+                                Ver projeto <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contato" class="footer">
+        <div class="container footer-inner">
+            <div class="footer-cta reveal">
+                <h2>Vamos conversar?</h2>
+                <p>Aberto a novas oportunidades como desenvolvedor full stack.</p>
+            </div>
+
+            <div class="footer-links reveal">
+                <a href="https://www.linkedin.com/in/rychard-alcantara-2870121b1/" target="_blank" rel="noopener"
+                    class="btn btn-primary">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn
+                </a>
+                <a href="https://github.com/RychardAlcantara" target="_blank" rel="noopener" class="btn btn-outline">
+                    <i class="fa fa-github" aria-hidden="true"></i> GitHub
+                </a>
+                <a href="mailto:rychardgabriell32@gmail.com" class="btn btn-outline">
+                    <i class="fa fa-envelope" aria-hidden="true"></i> Email
+                </a>
             </div>
         </div>
 
-        <section id="sobre-mim">
-            <div class="page2">
-                <div class="center">
-                    <div class="texto-sobre-mim">
-                        <h2>Sobre Mim</h2>
-                        <div class="sobre-mim-container">
-                            <div class="minha-foto">
-                                <img class="minha-foto" src="img/minha-foto.jpg" alt="Rychard Gabriell">
-                            </div>
-                            <p>
-                                Sou formado em Análise e Desenvolvimento de Sistemas pela UMESP e
-                                <strong>pós-graduado em Front-End Engineering</strong>, com foco em arquitetura
-                                de aplicações, performance, responsividade e boas práticas de desenvolvimento.
-                                <br><br>
-                                Tenho experiência prática no desenvolvimento de sites institucionais,
-                                landing pages e sistemas web, criando interfaces modernas, elegantes e
-                                orientadas à conversão.
-                                Minha trajetória começou no suporte técnico e evoluiu para o desenvolvimento
-                                de soluções completas, sempre com foco em qualidade, usabilidade e resultados
-                                para o cliente.
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section id="habilidades">
-            <div class="page3">
-                <div class="center">
-                    <div class="texto-habilidades">
-                        <h2>Minhas Habilidades</h2>
-                        <div class="habilidades">
-                            <img alt="Rychard-Js" height="60" width="50"
-                                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
-                            <img alt="Rychard-CSS" height="60" width="50"
-                                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-                            <img alt="Rychard-NODE" height="60" width="50"
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain-wordmark.svg">
-                            <img alt="Rychard-PHP" height="60" width="50"
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
-                            <img alt="Rychard-REACT" height="60" width="50"
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
-                            <img alt="Rychard-C#" height="60" width="50"
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" />
-                            <img alt="Rychard-typescript" height="60" width="50"
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
-                            <img alt="Rychard-angular" height="60" width="50"
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg" />
-                            <img alt="Rychard-HTML" height="60" width="50"
-                                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section id="projetos">
-            <div class="page4">
-                <div class="center">
-                    <div class="projetos">
-                        <h2>Projetos em Destaque</h2>
-
-                        <div class="projetos-grid">
-
-                            <!-- Projeto 1 -->
-                            <div class="projeto-card">
-                                <img src="img/projeto-arquitetura.jpg" alt="Arquitetura Trindade">
-                                <h3>Arquitetura Trindade</h3>
-                                <p>
-                                    Site institucional para escritório de arquitetura,
-                                    focado em design moderno, elegância e apresentação
-                                    de projetos arquitetônicos.
-                                </p>
-                                <a href="https://arquitetura-trindade.vercel.app/" target="_blank">
-                                    Ver projeto
-                                </a>
-                            </div>
-
-                            <!-- Projeto 2 -->
-                            <div class="projeto-card">
-                                <img src="img/projeto-marketing.jpg" alt="Innova Marketing">
-                                <h3>Innova Marketing</h3>
-                                <p>
-                                    Landing page profissional para empresa de marketing,
-                                    com foco em conversão, performance e comunicação clara.
-                                </p>
-                                <a href="https://innovamkt.cc/" target="_blank">
-                                    Ver projeto
-                                </a>
-                            </div>
-
-                            <!-- Projeto 3 -->
-                            <div class="projeto-card">
-                                <img src="img/projeto-marcenaria.jpg" alt="O Marceneiro">
-                                <h3>O Marceneiro</h3>
-                                <p>
-                                    Site institucional para marcenaria de móveis planejados,
-                                    destacando serviços, portfólio e contato via WhatsApp.
-                                </p>
-                                <a href="https://fabrica-omarceneiro.com.br/" target="_blank">
-                                    Ver projeto
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <footer id="contato">
-            <div class="page5">
-                <div class="footer-grid">
-
-                    <div class="footer-col">
-                        <h3>Redes sociais</h3>
-                        <div class="social-icons">
-                            <a href="https://www.linkedin.com/in/rychard-alcantara-2870121b1" target="_blank"><img
-                                    src="img/icon-LinkedIn.png" alt="LinkedIn"></a>
-                            <a href="https://github.com/RychardAlcantara" target="_blank"><img src="img/icon-GitHub.png"
-                                    alt="GitHub"></a>
-                            <a href="https://www.instagram.com/seu_usuario" target="_blank"><img
-                                    src="img/icon-Instagram.png" alt="Instagram"></a>
-                        </div>
-                    </div>
-
-                    <div class="footer-col">
-                        <h3>Tecnologias</h3>
-                        <p>React • Angular</p>
-                        <p>TypeScript • Node.js</p>
-                        <p>HTML • CSS • JavaScript</p>
-                    </div>
-
-                    <div class="footer-col">
-                        <h3>Contato</h3>
-                        <p>Email:<br>
-                            <a href="mailto:rychardgabriell32@gmail.com">
-                                rychardgabriell32@gmail.com
-                            </a>
-                        </p>
-                        <p>Telefone:<br>
-                            (11) 96979-2493<br>
-                            (11) 95698-6474
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                © 2026 — Rychard Alcantara
-                <br>
-                Desenvolvedor Full Stack & Front-End Engineer
-            </div>
-        </footer>
-
-
-    </main>
+        <div class="footer-bottom">
+            © 2026 Rychard Alcantara — Full Stack Developer
+        </div>
+    </footer>
 
     <script src="javascript/scripts.js"></script>
 
