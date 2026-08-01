@@ -223,6 +223,14 @@ img {
     align-items: center;
 }
 
+.hero-content,
+.hero-panel {
+    /* Without this, grid items default to a min-width based on their
+       content's intrinsic size. The code block's long unwrapped lines
+       would otherwise force the whole hero wider than the viewport. */
+    min-width: 0;
+}
+
 .eyebrow {
     display: inline-block;
     font-family: var(--font-mono);
